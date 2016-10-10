@@ -12,3 +12,8 @@
  git reset --hard commit_id：回退到commit_id所对应的版本
  git reflog：查看历史命令，方便确定要回到未来哪个版本
  git :跟踪的是修改，commit提交的是存入暂存区中的修改，如果在工作区中修改后没有用add命令添加到暂存区，commit不会将其提交至git仓库中。
+
+ 撤销更改：
+   no.1 只是在工作区更改，还未提交到暂存区，使用 git checkout -- file
+   no.2 提交到暂存区，未提交到仓库中，第一步git reset HEAD file 第二步见no.1
+   no.3 提交至版本仓库中，撤销本次提交，使用版本回退方法 git reset HEAD^
