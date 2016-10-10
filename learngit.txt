@@ -11,4 +11,4 @@
  git reset --hard HEAD^^:回退到上上一版本
  git reset --hard commit_id：回退到commit_id所对应的版本
  git reflog：查看历史命令，方便确定要回到未来哪个版本
-
+ git :跟踪的是修改，commit提交的是存入暂存区中的修改，如果在工作区中修改后没有用add命令添加到暂存区，commit不会将其提交至git仓库中。
