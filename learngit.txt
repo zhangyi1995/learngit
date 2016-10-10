@@ -1,0 +1,14 @@
+ git init ：将一个文件夹初始化为git仓库
+ 
+ git add <file>:将文件加入到git仓库中去
+ git commit -m "" :将文件提交到git仓库中，-m后面表示的是此次提交的说明
+
+ git status :显示当前工作区的状态，可查看是否有文件被修改然而没有被提交
+ git diff：显示工作区的文件做了哪些修改
+
+ git log：查看版本修改的历史记录，前面的一大串数字是commit_id用于版本回退
+ git reset --hard HEAD^:回退到上一版本
+ git reset --hard HEAD^^:回退到上上一版本
+ git reset --hard commit_id：回退到commit_id所对应的版本
+ git reflog：查看历史命令，方便确定要回到未来哪个版本
+
